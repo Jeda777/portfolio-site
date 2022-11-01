@@ -37,6 +37,7 @@
 <style lang="scss">
   @import "../variables";
   header {
+    z-index: 1;
     background: white;
     padding: 1rem;
     display: flex;
