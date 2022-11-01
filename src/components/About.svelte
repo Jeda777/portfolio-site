@@ -40,18 +40,14 @@
 <style lang="scss">
   @import "../variables";
   #about {
+    max-width: 1200px;
     padding: 4rem 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
     text-align: center;
-    h2 {
-      text-transform: uppercase;
-      font-weight: 700;
-      font-size: 28px;
-      border-bottom: 4px solid $text-hover;
-    }
+    margin: 0 auto;
     .about-container {
       display: flex;
       flex-direction: column;
@@ -82,10 +78,6 @@
     @media (min-width: 768px) {
       padding: 5rem 8rem;
       gap: 3rem;
-      h2 {
-        font-size: 34px;
-        border-width: 5px;
-      }
       .about-container {
         gap: 3rem;
         .about-text,
@@ -105,11 +97,8 @@
       padding: 5rem 10rem;
     }
     @media (min-width: 1280px) {
-      padding: 6rem 8rem;
+      padding: 6rem 2rem;
       gap: 4rem;
-      h2 {
-        font-size: 38px;
-      }
       .about-container {
         flex-direction: row;
         align-items: flex-start;
@@ -132,11 +121,8 @@
       }
     }
     @media (min-width: 1600px) {
-      padding: 8rem 10rem;
+      padding: 8rem 2rem;
       gap: 6rem;
-      h2 {
-        font-size: 44px;
-      }
       .about-container {
         gap: 12rem;
         .about-text,
@@ -151,11 +137,8 @@
       }
     }
     @media (min-width: 1920px) {
-      padding: 10rem 12rem;
+      padding: 10rem 2rem;
       gap: 8rem;
-      h2 {
-        font-size: 50px;
-      }
       .about-container {
         gap: 14rem;
         .about-text,
