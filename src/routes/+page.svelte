@@ -3,6 +3,7 @@
   import Hero from "../components/Hero.svelte";
   import About from "../components/About.svelte";
   import Projects from "../components/Projects.svelte";
+  import Contact from "../components/Contact.svelte";
   import "./+page.scss";
 </script>
 
@@ -11,4 +12,5 @@
   <Hero />
   <About />
   <Projects />
+  <Contact />
 </main>
