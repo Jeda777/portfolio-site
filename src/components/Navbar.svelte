@@ -8,6 +8,10 @@
   const handleMenuButton = () => {
     open ? (open = false) : (open = true);
   };
+
+  const closeMenu = () => {
+    open = false;
+  };
 </script>
 
 <header>
@@ -27,10 +31,10 @@
     </nav>
   </div>
   <nav class={`mobile-nav ${open ? "opened" : ""}`}>
-    <a href="#hero">Home</a>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+    <a href="#hero" on:click={closeMenu}>Home</a>
+    <a href="#about" on:click={closeMenu}>About</a>
+    <a href="#projects" on:click={closeMenu}>Projects</a>
+    <a href="#contact" on:click={closeMenu}>Contact</a>
   </nav>
 </header>
 
