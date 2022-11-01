@@ -20,14 +20,14 @@
       <img src={open ? close : menu} alt="menu button" />
     </button>
     <nav class="desktop-nav">
-      <a href="#home">Home</a>
+      <a href="#hero">Home</a>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
   <nav class={`mobile-nav ${open ? "opened" : ""}`}>
-    <a href="#home">Home</a>
+    <a href="#hero">Home</a>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
@@ -67,13 +67,12 @@
     }
     .header-right {
       .mobile-button {
-        background: none;
-        border: none;
         width: 2rem;
         height: 2rem;
         cursor: pointer;
         img {
           width: 100%;
+          display: block;
         }
       }
       .desktop-nav {
