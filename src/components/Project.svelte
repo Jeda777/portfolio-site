@@ -80,7 +80,7 @@
         gap: 1rem;
       }
     }
-    @media (min-width: 1280px) and (hover) {
+    @media (min-width: 1024px) and (hover) {
       .project-img-container {
         .img-overlay {
           display: initial;

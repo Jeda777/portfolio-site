@@ -35,9 +35,10 @@
       width: 2.5rem;
       height: 2.5rem;
       position: relative;
-      transition: all 0.3s ease-in-out;
       &:hover {
-        background: #ede12b;
+        img {
+          rotate: 360deg;
+        }
       }
       img {
         display: block;
@@ -46,6 +47,7 @@
         left: -2px;
         width: 44px;
         height: 44px;
+        transition: all 0.3s ease-in-out;
       }
     }
     @media (min-width: 768px) {

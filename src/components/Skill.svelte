@@ -12,6 +12,10 @@
     color: $bg;
     border-radius: 0.5rem;
     font-weight: 400;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      opacity: 0.7;
+    }
     @media (min-width: 768px) {
       padding: 0.375rem 0.875rem;
       border-radius: 0.625rem;
