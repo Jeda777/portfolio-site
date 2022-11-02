@@ -41,139 +41,44 @@
 <style lang="scss">
   @import "../variables";
   header {
-    z-index: 1;
-    background: white;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    @apply fixed top-0 left-0 z-10 flex w-full items-center justify-between bg-white p-4 lg:py-5 lg:px-8 xl:px-9 2xl:py-6 2xl:px-10;
     box-shadow: 0px -56px 40px 40px $text;
     a {
-      transition: all 0.3s ease-in-out;
-      &:hover {
-        color: $text-hover;
-      }
+      @apply transition-all duration-300 hover:text-secondary;
     }
     .header-left {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
+      @apply flex items-center gap-2 md:gap-3 2xl:gap-4;
       img {
-        width: 2.5rem;
+        @apply w-10 lg:w-11 2xl:w-12;
       }
       a {
-        font-size: 18px;
-        font-weight: 700;
+        @apply text-lg font-bold md:text-xl lg:text-[22px] 2xl:text-2xl;
       }
     }
     .header-right {
       .mobile-button {
-        width: 2rem;
-        height: 2rem;
-        cursor: pointer;
+        @apply h-8 w-8 cursor-pointer md:hidden;
         img {
-          width: 100%;
-          display: block;
+          @apply block w-full;
         }
       }
       .desktop-nav {
-        display: none;
-        gap: 1.5rem;
+        @apply hidden gap-6 md:flex md:gap-7 lg:gap-8 2xl:gap-12;
         a {
-          text-transform: uppercase;
-          font-size: 18px;
-          font-weight: 600;
+          @apply text-lg font-semibold uppercase 2xl:text-xl;
         }
       }
     }
     .mobile-nav {
-      width: 90%;
-      position: absolute;
-      top: 110%;
-      left: -100%;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      background: white;
-      padding: 1rem;
-      transition: all 0.3s ease-in-out;
-      border-radius: 1rem;
+      @apply absolute top-[110%] -left-full flex w-[90%] flex-col rounded-2xl bg-white p-4 text-center md:hidden;
+      @apply transition-all duration-300;
       &.opened {
         left: 5%;
       }
       a {
-        padding: 1rem 0;
-        border-top: 1px solid $bg;
-        font-weight: 600;
+        @apply border-0 border-t border-solid border-bg py-4 font-semibold;
         &:nth-child(1) {
           border: none;
-        }
-      }
-    }
-    @media (min-width: 768px) {
-      .header-left {
-        gap: 0.75rem;
-        a {
-          font-size: 20px;
-        }
-      }
-      .header-right {
-        .mobile-button {
-          display: none;
-        }
-        .desktop-nav {
-          display: flex;
-        }
-      }
-      .mobile-nav {
-        display: none;
-      }
-    }
-    @media (min-width: 1024px) {
-      padding: 1.25rem 2rem;
-      .header-left {
-        a {
-          font-size: 22px;
-        }
-      }
-      .header-right {
-        .desktop-nav {
-          gap: 2rem;
-        }
-      }
-    }
-    @media (min-width: 1440px) {
-      padding: 1.5rem 2.5rem;
-      .header-left {
-        gap: 1rem;
-        img {
-          width: 3rem;
-        }
-        a {
-          font-size: 24px;
-        }
-      }
-      .header-right {
-        .desktop-nav {
-          gap: 3rem;
-          a {
-            font-size: 20px;
-          }
-        }
-      }
-    }
-    @media (min-width: 1920px) {
-      padding: 1.5rem 4rem;
-      .header-right {
-        .desktop-nav {
-          gap: 5rem;
-          a {
-            font-size: 20px;
-          }
         }
       }
     }
