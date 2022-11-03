@@ -31,7 +31,7 @@
     @apply transition-all duration-300 hover:opacity-70;
     img,
     svg {
-      @apply block h-10 w-10;
+      @apply block h-9 w-9;
     }
   }
   a.overlay {
@@ -39,6 +39,10 @@
     transform: translate(-50%, -50%);
     &:nth-child(2) {
       @apply left-2/3;
+    }
+    img,
+    svg {
+      @apply block h-12 w-12;
     }
   }
 </style>

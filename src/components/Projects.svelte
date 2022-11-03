@@ -20,10 +20,10 @@
 <style lang="scss">
   #projects {
     .projects-container {
-      @apply flex w-full flex-wrap justify-center gap-8;
+      @apply flex w-full flex-wrap justify-center gap-6 lg:gap-8;
     }
     a {
-      @apply rounded-3xl bg-secondary py-2 px-6 text-lg text-white transition-all duration-300 hover:opacity-70 2xl:-mt-4;
+      @apply rounded-3xl bg-secondary py-2 px-8 text-lg text-white transition-all duration-300 hover:opacity-70 2xl:-mt-4;
     }
   }
 </style>
