@@ -1,5 +1,4 @@
 <script>
-  import { each } from "svelte/internal";
   import Skill from "./Skill.svelte";
   const skills = [
     "React",
@@ -40,8 +39,7 @@
 <style lang="scss">
   @import "../variables";
   #about {
-    @apply mx-auto flex max-w-[1200px] flex-col items-center gap-8 py-16 px-12 text-center md:gap-12 md:py-20 md:px-32 lg:px-40
-    xl:gap-16 xl:py-24 xl:px-8 2xl:gap-24 2xl:py-32;
+    @apply px-12 md:px-32 lg:px-40 xl:px-8;
     .about-container {
       @apply flex flex-col items-center gap-8 md:gap-12 xl:flex-row xl:items-start xl:gap-40 xl:text-left 2xl:gap-48;
       .about-text,

@@ -11,7 +11,7 @@
 <style lang="scss">
   @import "../variables";
   #hero {
-    @apply flex flex-col items-center justify-center gap-12 bg-bg py-32 px-4 text-center;
+    @apply max-w-none gap-12 bg-bg px-4 md:py-32;
     background-image: $hero-bg-img;
     min-height: calc(100vh - 4.5rem);
     h1 {

@@ -19,8 +19,6 @@
 
 <style lang="scss">
   #projects {
-    @apply mx-auto flex max-w-[1200px] flex-col items-center gap-8 py-16 px-8 text-center md:gap-12 md:py-20 md:px-8 lg:py-24
-    xl:gap-16 2xl:gap-28;
     .projects-container {
       @apply flex w-full flex-wrap justify-center gap-8;
     }

@@ -30,7 +30,6 @@
 
 <style lang="scss">
   #contact {
-    @apply mx-auto flex max-w-[1200px] flex-col items-center gap-8 py-16 px-8 text-center md:gap-12 md:py-20 lg:py-24 xl:gap-16 2xl:gap-24;
     .contact-container {
       @apply flex flex-wrap items-center justify-center gap-8 md:gap-16;
       .contact-element {
