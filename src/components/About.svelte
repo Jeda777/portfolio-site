@@ -40,115 +40,22 @@
 <style lang="scss">
   @import "../variables";
   #about {
-    max-width: 1200px;
-    padding: 4rem 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    text-align: center;
-    margin: 0 auto;
+    @apply mx-auto flex max-w-[1200px] flex-col items-center gap-8 py-16 px-12 text-center md:gap-12 md:py-20 md:px-32 lg:px-40
+    xl:gap-16 xl:py-24 xl:px-8 2xl:gap-24 2xl:py-32;
     .about-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 2rem;
+      @apply flex flex-col items-center gap-8 md:gap-12 xl:flex-row xl:items-start xl:gap-40 xl:text-left 2xl:gap-48;
       .about-text,
       .about-skills {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
+        @apply flex flex-col items-center gap-6 md:gap-8 xl:flex-1 xl:items-start;
         h3 {
-          font-size: 26px;
-          font-weight: 600;
+          @apply text-[26px] font-semibold md:border-4 md:text-3xl xl:text-4xl;
           border-bottom: 3px solid $text-hover;
         }
         p {
-          font-weight: 400;
+          @apply font-normal xl:text-lg 2xl:text-2xl;
         }
         .skills-container {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          gap: 0.5rem;
-        }
-      }
-    }
-    @media (min-width: 768px) {
-      padding: 5rem 8rem;
-      gap: 3rem;
-      .about-container {
-        gap: 3rem;
-        .about-text,
-        .about-skills {
-          gap: 2rem;
-          h3 {
-            font-size: 30px;
-            border-width: 4px;
-          }
-          .skills-container {
-            gap: 0.75rem;
-          }
-        }
-      }
-    }
-    @media (min-width: 1024px) {
-      padding: 5rem 10rem;
-    }
-    @media (min-width: 1280px) {
-      padding: 6rem 2rem;
-      gap: 4rem;
-      .about-container {
-        flex-direction: row;
-        align-items: flex-start;
-        text-align: left;
-        gap: 10rem;
-        .about-text,
-        .about-skills {
-          align-items: flex-start;
-          flex: 1;
-          h3 {
-            font-size: 34px;
-          }
-          p {
-            font-size: 18px;
-          }
-          .skills-container {
-            justify-content: flex-start;
-          }
-        }
-      }
-    }
-    @media (min-width: 1600px) {
-      padding: 8rem 2rem;
-      gap: 6rem;
-      .about-container {
-        gap: 12rem;
-        .about-text,
-        .about-skills {
-          h3 {
-            font-size: 38px;
-          }
-          p {
-            font-size: 22px;
-          }
-        }
-      }
-    }
-    @media (min-width: 1920px) {
-      padding: 10rem 2rem;
-      gap: 8rem;
-      .about-container {
-        gap: 14rem;
-        .about-text,
-        .about-skills {
-          h3 {
-            font-size: 44px;
-          }
-          p {
-            font-size: 24px;
-          }
+          @apply flex flex-wrap justify-center gap-2 md:gap-3 xl:justify-start;
         }
       }
     }
