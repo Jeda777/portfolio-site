@@ -29,52 +29,16 @@
 </section>
 
 <style lang="scss">
-  @import "../variables";
   #contact {
-    padding: 4rem 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    text-align: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    @apply mx-auto flex max-w-[1200px] flex-col items-center gap-8 py-16 px-8 text-center md:gap-12 md:py-20 lg:py-24 xl:gap-16 2xl:gap-24;
     .contact-container {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
+      @apply flex flex-wrap items-center justify-center gap-8 md:gap-16;
       .contact-element {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
+        @apply flex flex-1 flex-col items-center gap-2;
         img {
-          height: 40px;
+          @apply h-10;
         }
       }
-    }
-    @media (min-width: 768px) {
-      padding: 5rem 2rem;
-      gap: 3rem;
-      .contact-container {
-        gap: 4rem;
-      }
-    }
-    @media (min-width: 1024px) {
-      padding: 6rem 2rem;
-    }
-    @media (min-width: 1280px) {
-      padding: 6rem 2rem;
-      gap: 4rem;
-    }
-    @media (min-width: 1600px) {
-      gap: 6rem;
-    }
-    @media (min-width: 1920px) {
-      gap: 8rem;
     }
   }
 </style>
