@@ -41,8 +41,8 @@
 <style lang="scss">
   @import "../variables";
   header {
-    @apply fixed top-0 left-0 z-10 flex w-full items-center justify-between bg-white p-4 lg:py-5 lg:px-8 xl:px-9 2xl:py-6 2xl:px-10;
-    box-shadow: 0px -56px 40px 40px $text;
+    @apply fixed top-0 left-0 z-10 flex w-full items-center justify-between bg-white p-4 shadow-[0_-56px_40px_40px_rgba(0,0,0,0.3)]
+    shadow-primary lg:py-5 lg:px-6 xl:px-8 2xl:py-6 2xl:px-10 3xl:px-12;
     a {
       @apply transition-all duration-300 hover:text-secondary;
     }
@@ -65,13 +65,13 @@
       .desktop-nav {
         @apply hidden gap-6 md:flex md:gap-7 lg:gap-8 2xl:gap-12;
         a {
-          @apply text-lg font-semibold uppercase 2xl:text-xl;
+          @apply font-semibold uppercase lg:text-lg 2xl:text-xl;
         }
       }
     }
     .mobile-nav {
-      @apply absolute top-[110%] -left-full flex w-[90%] flex-col rounded-2xl bg-white p-4 text-center md:hidden;
-      @apply transition-all duration-300;
+      @apply absolute top-[110%] -left-full flex w-[90%] flex-col rounded-2xl bg-white px-4 py-2 text-center transition-all
+      duration-300 md:hidden;
       &.opened {
         left: 5%;
       }
