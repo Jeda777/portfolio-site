@@ -1,4 +1,4 @@
-<footer>© Copyright 2022 bt Jakub Tomasz Jęda</footer>
+<footer>© Copyright 2022 by Jakub Tomasz Jęda</footer>
 
 <style lang="scss">
   footer {
