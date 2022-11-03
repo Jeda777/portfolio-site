@@ -11,110 +11,23 @@
 <style lang="scss">
   @import "../variables";
   #hero {
-    background-color: $bg;
+    @apply flex flex-col items-center gap-12 bg-bg py-32 px-4 text-center xl:py-40 2xl:py-56;
     background-image: $hero-bg-img;
-    padding: 8rem 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-    text-align: center;
     h1 {
-      font-size: 32px;
-      text-transform: uppercase;
-      font-weight: 700;
+      @apply text-[32px] font-bold uppercase md:text-[40px] lg:text-5xl xl:text-6xl 2xl:text-7xl;
     }
     p {
-      font-size: 18px;
-      font-weight: 400;
+      @apply text-lg font-normal md:text-[22px] lg:text-[26px] xl:text-[28px] 2xl:text-4xl;
     }
     a {
-      cursor: pointer;
-      background: $text-hover;
-      border-radius: 100%;
-      width: 2.5rem;
-      height: 2.5rem;
-      position: relative;
+      @apply relative h-10 w-10 cursor-pointer rounded-full bg-secondary md:h-12 md:w-12 2xl:h-16 2xl:w-16;
       &:hover {
         img {
           rotate: 360deg;
         }
       }
       img {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: -2px;
-        width: 44px;
-        height: 44px;
-        transition: all 0.3s ease-in-out;
-      }
-    }
-    @media (min-width: 768px) {
-      h1 {
-        font-size: 40px;
-      }
-      p {
-        font-size: 22px;
-      }
-      a {
-        width: 3rem;
-        height: 3rem;
-        img {
-          width: 52px;
-          height: 52px;
-        }
-      }
-    }
-    @media (min-width: 1024px) {
-      h1 {
-        font-size: 48px;
-      }
-      p {
-        font-size: 26px;
-      }
-    }
-    @media (min-width: 1280px) {
-      padding: 10rem 1rem;
-      h1 {
-        font-size: 58px;
-      }
-      p {
-        font-size: 28px;
-      }
-    }
-    @media (min-width: 1440px) {
-      padding: 12rem 1rem;
-      h1 {
-        font-size: 64px;
-      }
-      p {
-        font-size: 32px;
-      }
-      a {
-        width: 3.5rem;
-        height: 3.5rem;
-        img {
-          width: 60px;
-          height: 60px;
-        }
-      }
-    }
-    @media (min-width: 1600px) {
-      padding: 16rem 1rem;
-      h1 {
-        font-size: 76px;
-      }
-      p {
-        font-size: 38px;
-      }
-      a {
-        width: 4rem;
-        height: 4rem;
-        img {
-          width: 68px;
-          height: 68px;
-        }
+        @apply absolute top-0 -left-[2px] block h-11 w-11 transition-all duration-300 md:h-[52px] md:w-[52px] 2xl:h-[68px] 2xl:w-[68px];
       }
     }
     @media (min-width: 1920px) {
