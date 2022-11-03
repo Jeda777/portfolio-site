@@ -16,7 +16,7 @@
     viewBox="0 0 24 24"
     stroke-width="1.5"
     stroke={type === "overlay" ? "#ffffff" : "#000000"}
-    class="w-6 h-6"
+    class="h-6 w-6"
   >
     <path
       stroke-linecap="round"
@@ -27,35 +27,18 @@
 </a>
 
 <style lang="scss">
-  a.overlay {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 33.33%;
-    transition: all 0.3s ease-in-out;
-    &:nth-child(2) {
-      left: 66.66%;
-    }
-    &:hover {
-      opacity: 0.7;
-    }
+  a {
+    @apply transition-all duration-300 hover:opacity-70;
     img,
     svg {
-      display: block;
-      width: 40px;
-      height: 40px;
+      @apply block h-10 w-10;
     }
   }
-  a.normal {
-    transition: all 0.3s ease-in-out;
-    &:hover {
-      opacity: 0.7;
-    }
-    img,
-    svg {
-      display: block;
-      width: 40px;
-      height: 40px;
+  a.overlay {
+    @apply absolute top-1/2 left-1/3;
+    transform: translate(-50%, -50%);
+    &:nth-child(2) {
+      @apply left-2/3;
     }
   }
 </style>

@@ -18,53 +18,14 @@
 </section>
 
 <style lang="scss">
-  @import "../variables";
   #projects {
-    padding: 4rem 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    text-align: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    @apply mx-auto flex max-w-[1200px] flex-col items-center gap-8 py-16 px-8 text-center md:gap-12 md:py-20 md:px-8 lg:py-24
+    xl:gap-16 2xl:gap-28;
     .projects-container {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      flex-wrap: wrap;
+      @apply flex w-full flex-wrap justify-center gap-8;
     }
     a {
-      font-size: 18px;
-      padding: 0.5rem 1.5rem;
-      border-radius: 5rem;
-      color: white;
-      background: $text-hover;
-      transition: all 0.3s ease-in-out;
-      &:hover {
-        opacity: 0.7;
-      }
-    }
-    @media (min-width: 768px) {
-      padding: 5rem 2rem;
-      gap: 3rem;
-    }
-    @media (min-width: 1024px) {
-      padding: 6rem 2rem;
-    }
-    @media (min-width: 1280px) {
-      padding: 6rem 2rem;
-      gap: 4rem;
-    }
-    @media (min-width: 1600px) {
-      gap: 6rem;
-    }
-    @media (min-width: 1920px) {
-      gap: 8rem;
-      a {
-        margin-top: -2rem;
-      }
+      @apply rounded-3xl bg-secondary py-2 px-6 text-lg text-white transition-all duration-300 hover:opacity-70 2xl:-mt-4;
     }
   }
 </style>

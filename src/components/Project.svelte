@@ -20,64 +20,27 @@
 </div>
 
 <style lang="scss">
-  @import "../variables";
   .project {
-    display: flex;
-    flex-direction: column;
-    border-radius: 1rem;
-    max-width: 350px;
+    @apply flex max-w-[350px] flex-col rounded-2xl;
     .project-img-container {
-      aspect-ratio: 16/9;
-      position: relative;
-      width: 100%;
+      @apply relative aspect-video w-full;
       img {
-        object-fit: cover;
-        display: block;
-        aspect-ratio: 16/9;
-        width: 100%;
-        height: 100%;
-        border-top-left-radius: 1rem;
-        border-top-right-radius: 1rem;
+        @apply block aspect-video h-full w-full rounded-t-2xl object-cover;
       }
       .img-overlay {
-        display: none;
-        border-top-left-radius: 1rem;
-        border-top-right-radius: 1rem;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
-        background: rgb(0 0 0 / 0.6);
-        opacity: 0;
-        transition: all 0.3s ease-in-out;
-        &:hover {
-          opacity: 1;
-        }
+        @apply absolute left-0 top-0 hidden h-full w-full rounded-t-2xl bg-black bg-opacity-60 opacity-0 transition-all duration-300 hover:opacity-100;
       }
     }
     .project-info-container {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background: white;
-      border-bottom-left-radius: 1rem;
-      border-bottom-right-radius: 1rem;
-      padding: 2rem 1rem;
-      gap: 1rem;
+      @apply flex h-full flex-col items-center gap-4 rounded-b-2xl bg-white py-8 px-4;
       h3 {
-        font-size: 20px;
-        font-weight: 600;
+        @apply text-xl font-semibold;
       }
       p {
-        font-size: 14px;
-        font-weight: 400;
+        @apply text-sm font-normal;
       }
       .info-links-container {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
+        @apply flex justify-center gap-4;
       }
     }
     @media (min-width: 1024px) and (hover) {
