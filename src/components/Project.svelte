@@ -21,7 +21,7 @@
 
 <style lang="scss">
   .project {
-    @apply flex max-w-[350px] flex-col rounded-2xl;
+    @apply flex w-full max-w-[350px] flex-col rounded-2xl;
     .project-img-container {
       @apply relative aspect-video w-full;
       img {
