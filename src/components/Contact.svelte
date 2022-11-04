@@ -18,7 +18,7 @@
       <a
         href="https://www.linkedin.com/in/jakub-tomasz-j%C4%99da/"
         target="_blank"
-        rel="noreferrer">linkedin.com/in/jakub-tomasz/</a
+        rel="noreferrer">linkedin.com/in/jakub-tomasz-jęda/</a
       >
     </div>
     <div class="contact-element">
@@ -31,11 +31,15 @@
 <style lang="scss">
   #contact {
     .contact-container {
-      @apply flex flex-wrap items-center justify-center gap-8 md:gap-16;
+      @apply flex flex-wrap items-center justify-center gap-8 md:items-start md:gap-16;
       .contact-element {
-        @apply flex flex-1 flex-col items-center gap-2;
+        @apply flex flex-1 flex-col items-center gap-2 2xl:gap-4;
         img {
-          @apply h-10;
+          @apply h-10 md:h-11 xl:h-12 3xl:h-14;
+        }
+        a,
+        p {
+          @apply md:text-lg xl:text-xl 3xl:text-2xl;
         }
       }
     }
