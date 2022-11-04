@@ -5,7 +5,7 @@
 
 <div class="project">
   <div class="project-img-container">
-    <img src={project.imageURL} alt="project screen" />
+    <img src={project.imageURL} alt={`${project.name} image`} />
     <div class="img-overlay">
       <ProjectLinks {project} type="overlay" />
     </div>
@@ -28,7 +28,8 @@
         @apply block aspect-video h-full w-full rounded-t-2xl object-cover;
       }
       .img-overlay {
-        @apply absolute left-0 top-0 hidden h-full w-full rounded-t-2xl bg-black bg-opacity-60 opacity-0 transition-all duration-300 hover:opacity-100;
+        @apply absolute left-0 top-0 hidden h-full w-full rounded-t-2xl bg-black bg-opacity-60 opacity-0 transition-all
+        duration-300 focus-within:opacity-100 hover:opacity-100;
       }
     }
     .project-info-container {

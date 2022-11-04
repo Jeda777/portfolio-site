@@ -15,7 +15,7 @@
 </script>
 
 <section id="about">
-  <h2>About Me</h2>
+  <h2 tabindex="0">About Me</h2>
   <div class="about-container">
     <p>
       My name is Jakub and I am a self-taught Front-end Developer from Poland. I

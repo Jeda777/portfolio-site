@@ -16,7 +16,7 @@
 
 <header>
   <div class="header-left">
-    <img src={logo} alt="" />
+    <img src={logo} alt="logo" />
     <a href="/">Jakub Jęda</a>
   </div>
   <div class="header-right">
@@ -44,7 +44,7 @@
     @apply fixed top-0 left-0 z-10 flex w-full items-center justify-between bg-white p-4 shadow-[0_-56px_40px_40px_rgba(0,0,0,0.3)]
     shadow-primary lg:py-5 lg:px-6 xl:px-8 2xl:py-6 2xl:px-10 3xl:px-12;
     a {
-      @apply transition-all duration-300 hover:text-secondary;
+      @apply transition-colors duration-300 hover:text-secondary focus:text-secondary focus:outline-none;
     }
     .header-left {
       @apply flex items-center gap-2 md:gap-3 2xl:gap-4;

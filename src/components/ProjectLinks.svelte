@@ -28,7 +28,7 @@
 
 <style lang="scss">
   a {
-    @apply transition-all duration-300 hover:opacity-70;
+    @apply outline-none transition-opacity duration-300 focus-within:opacity-70 hover:opacity-70;
     img,
     svg {
       @apply block h-9 w-9;

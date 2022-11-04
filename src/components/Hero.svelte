@@ -21,14 +21,17 @@
       @apply text-xl font-normal md:text-[22px] lg:text-[26px] xl:text-[30px] 2xl:text-4xl 3xl:text-[42px];
     }
     a {
-      @apply relative h-10 w-10 cursor-pointer rounded-full bg-secondary md:h-12 md:w-12 2xl:h-16 2xl:w-16 3xl:h-20 3xl:w-20;
-      &:hover {
+      @apply relative h-10 w-10 cursor-pointer rounded-full bg-secondary transition-opacity duration-300 focus-within:opacity-70
+      hover:opacity-70 md:h-12 md:w-12 2xl:h-16 2xl:w-16 3xl:h-20 3xl:w-20;
+      &:hover,
+      &:focus-within {
+        outline: none;
         img {
-          rotate: 360deg;
+          transform: rotate(360deg);
         }
       }
       img {
-        @apply absolute top-0 -left-[2px] block h-11 w-11 transition-all duration-300 md:h-[52px] md:w-[52px] 2xl:h-[68px]
+        @apply absolute top-0 -left-[2px] block h-11 w-11 transition-transform duration-300 md:h-[52px] md:w-[52px] 2xl:h-[68px]
         2xl:w-[68px] 3xl:h-[84px] 3xl:w-[84px];
       }
     }

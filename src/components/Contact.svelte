@@ -23,7 +23,7 @@
     </div>
     <div class="contact-element">
       <img src={email} alt="E-Mail" />
-      <p>jakub.jeda@wp.pl</p>
+      <p tabindex="0">jakub.jeda@wp.pl</p>
     </div>
   </div>
 </section>
@@ -39,7 +39,7 @@
         }
         a,
         p {
-          @apply md:text-lg xl:text-xl 3xl:text-2xl;
+          @apply underline-offset-8 outline-none hover:underline focus:underline md:text-lg xl:text-xl 3xl:text-2xl;
         }
       }
     }
