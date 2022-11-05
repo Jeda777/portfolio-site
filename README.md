@@ -2,7 +2,7 @@
 
 First version of my portfolio website.
 
-- [Live Site](jakubjeda.me)
+- [Live Site](https://jakubjeda.me/)
 
 ## Built with
 
