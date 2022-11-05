@@ -1,3 +1,5 @@
+import smallProjectsImg from "./smallProjectsImg.png";
+
 const projects = [
   {
     name: "Rock, Paper, Scissors",
@@ -29,7 +31,7 @@ const projects = [
   {
     name: "Small Projects",
     description: "Site with collection of small HTML, CSS, and TS projects.",
-    imageURL: "/smallProjectsImg.png",
+    imageURL: smallProjectsImg,
     githubURL: "https://github.com/Jeda777/small-projects",
     siteURL: "https://jeda777.github.io/small-projects/",
   },

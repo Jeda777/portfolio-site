@@ -13,7 +13,7 @@
   <a
     href="https://github.com/Jeda777?tab=repositories"
     target="_blank"
-    rel="noreferrer">See More</a
+    rel="noreferrer">More Projects</a
   >
 </section>
 

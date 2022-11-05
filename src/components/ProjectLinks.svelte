@@ -7,7 +7,10 @@
 </script>
 
 <a href={project.githubURL} class={type} target="_blank" rel="noreferrer">
-  <img src={type === "overlay" ? github : githubDark} alt="github" /></a
+  <img
+    src={type === "overlay" ? github : githubDark}
+    alt={`${project.name} github`}
+  /></a
 >
 <a href={project.siteURL} class={type} target="_blank" rel="noreferrer">
   <svg
@@ -17,6 +20,7 @@
     stroke-width="1.5"
     stroke={type === "overlay" ? "#ffffff" : "#000000"}
     class="h-6 w-6"
+    aria-label={`${project.name} website`}
   >
     <path
       stroke-linecap="round"

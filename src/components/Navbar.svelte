@@ -16,22 +16,22 @@
 
 <header>
   <div class="header-left">
-    <img src={logo} alt="logo" />
+    <img src={logo} alt="Jakub Jęda logo" />
     <a href="/">Jakub Jęda</a>
   </div>
   <div class="header-right">
-    <button on:click={handleMenuButton} class="mobile-button">
-      <img src={open ? close : menu} alt="menu button" />
+    <button on:click={handleMenuButton} type="button" class="mobile-button">
+      <img src={open ? close : menu} alt="mobile menu open close" />
     </button>
     <nav class="desktop-nav">
-      <a href="#hero">Home</a>
+      <a href="/">Home</a>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
   <nav class={`mobile-nav ${open ? "opened" : ""}`}>
-    <a href="#hero" on:click={closeMenu}>Home</a>
+    <a href="/" on:click={closeMenu}>Home</a>
     <a href="#about" on:click={closeMenu}>About</a>
     <a href="#projects" on:click={closeMenu}>Projects</a>
     <a href="#contact" on:click={closeMenu}>Contact</a>
