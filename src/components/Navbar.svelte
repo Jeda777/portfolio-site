@@ -30,7 +30,10 @@
       <a href="#contact">Contact</a>
     </nav>
   </div>
-  <nav class={`mobile-nav ${open ? "opened" : ""}`}>
+  <nav
+    class={`mobile-nav ${open ? "opened" : ""}`}
+    inert={!open ? "true" : undefined}
+  >
     <a href="/" on:click={closeMenu}>Home</a>
     <a href="#about" on:click={closeMenu}>About</a>
     <a href="#projects" on:click={closeMenu}>Projects</a>
