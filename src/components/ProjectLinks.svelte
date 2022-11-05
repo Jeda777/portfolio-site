@@ -32,7 +32,7 @@
 
 <style lang="scss">
   a {
-    @apply outline-none transition-opacity duration-300 focus-within:opacity-70 hover:opacity-70;
+    @apply rounded-full outline-offset-8 outline-white transition-opacity duration-300 focus-within:opacity-70 hover:opacity-70;
     img,
     svg {
       @apply block h-9 w-9;

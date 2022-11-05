@@ -27,7 +27,7 @@ section {
 }
 
 h2 {
-  @apply text-4xl font-bold uppercase outline-none xl:text-[42px] 2xl:text-5xl 3xl:text-6xl;
+  @apply text-4xl font-bold uppercase outline-offset-8 xl:text-[42px] 2xl:text-5xl 3xl:text-6xl;
   border-bottom: 4px solid $text-hover;
   @media (min-width: 768px) {
     border-width: 5px;

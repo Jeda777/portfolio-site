@@ -21,11 +21,10 @@
       @apply text-xl font-normal md:text-[22px] lg:text-[26px] xl:text-[30px] 2xl:text-4xl 3xl:text-[42px];
     }
     a {
-      @apply relative h-10 w-10 cursor-pointer rounded-full bg-secondary transition-opacity duration-300 focus-within:opacity-70
-      hover:opacity-70 md:h-12 md:w-12 2xl:h-16 2xl:w-16 3xl:h-20 3xl:w-20;
+      @apply relative h-10 w-10 cursor-pointer rounded-full bg-secondary outline-offset-8 transition-opacity duration-300
+      hover:opacity-70 focus:opacity-70 md:h-12 md:w-12 2xl:h-16 2xl:w-16 3xl:h-20 3xl:w-20;
       &:hover,
       &:focus-within {
-        outline: none;
         img {
           transform: rotate(360deg);
         }
