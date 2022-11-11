@@ -1,4 +1,5 @@
 import smallProjectsImg from "./smallProjectsImg.png";
+import hangmanGameImg from "./hangmanGameImg.png";
 
 const projects = [
   {
@@ -20,13 +21,20 @@ const projects = [
     githubURL: "https://github.com/Jeda777/hex-color-game-typescript",
     siteURL: "https://jeda777.github.io/hex-color-game-typescript/",
   },
+  // {
+  //   name: "Random Recipe",
+  //   description: "Site with random recipe from API.",
+  //   imageURL:
+  //     "https://github.com/Jeda777/random-recipe/raw/main/Screenshot.png",
+  //   githubURL: "https://github.com/Jeda777/random-recipe",
+  //   siteURL: "https://benevolent-tarsier-24cc2b.netlify.app/",
+  // },
   {
-    name: "Random Recipe",
-    description: "Site with random recipe from API.",
-    imageURL:
-      "https://github.com/Jeda777/random-recipe/raw/main/Screenshot.png",
-    githubURL: "https://github.com/Jeda777/random-recipe",
-    siteURL: "https://benevolent-tarsier-24cc2b.netlify.app/",
+    name: "Hangman Game",
+    description: "Simple hangman game.",
+    imageURL: hangmanGameImg,
+    githubURL: "https://github.com/Jeda777/hangman-svelte",
+    siteURL: "https://celebrated-kulfi-471e87.netlify.app/",
   },
   {
     name: "Small Projects",
