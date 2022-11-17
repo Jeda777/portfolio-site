@@ -1,7 +1,5 @@
 <script>
   import logo from "../assets/logo.png";
-  import menu from "../assets/menu.svg";
-  import close from "../assets/close.svg";
 
   let open = false;
 
@@ -20,8 +18,17 @@
     <a href="/">Jakub Jęda</a>
   </div>
   <div class="header-right">
-    <button on:click={handleMenuButton} type="button" class="mobile-button">
-      <img src={open ? close : menu} alt="mobile menu open close" />
+    <button
+      on:click={handleMenuButton}
+      type="button"
+      class="mobile-button"
+      aria-expanded={open}
+    >
+      <svg viewbox="0 0 100 100">
+        <rect class="top" width="80" height="10" x="10" y="23" />
+        <rect class="mid" width="80" height="10" x="10" y="45" />
+        <rect class="bot" width="80" height="10" x="10" y="67" />
+      </svg>
     </button>
     <nav class="desktop-nav">
       <a href="/">Home</a>
@@ -61,8 +68,41 @@
     .header-right {
       .mobile-button {
         @apply h-8 w-8 cursor-pointer md:hidden;
-        img {
-          @apply block w-full;
+        svg {
+          @apply w-full;
+          rect {
+            transform-origin: center;
+            &.top,
+            &.bot {
+              transition: y 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0.15s,
+                transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            &.mid {
+              transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0.15s;
+            }
+          }
+        }
+        &[aria-expanded="true"] {
+          svg {
+            rect {
+              &.top,
+              &.bot {
+                y: 45;
+                transition: y 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+                  transform 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0.15s;
+              }
+              &.top {
+                transform: rotate(45deg);
+              }
+              &.mid {
+                transform: scale(0);
+                transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+              }
+              &.bot {
+                transform: rotate(-45deg);
+              }
+            }
+          }
         }
       }
       .desktop-nav {
