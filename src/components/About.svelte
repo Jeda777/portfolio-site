@@ -1,8 +1,13 @@
 <script>
   import Skill from "./Skill.svelte";
   const skills = [
+    "Next.js",
     "React",
     "Svelte",
+    "MongoDB",
+    "Node.js",
+    "Express",
+    "Socket.io",
     "JS",
     "TS",
     "TailwindCSS",
